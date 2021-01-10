@@ -3,8 +3,7 @@
 -- Author:       Th3Whit3Wolf <the.white.wolf.is.1337@gmail.com>
 -- Maintainer:   Th3Whit3Wolf <the.white.wolf.is.1337@gmail.com>
 -- Website:      httpc.//github.com/Th3Whit3Wolf/onebuddy
--- License:      MIT
-local Color, c, Group, g, s = require("colorbuddy").setup()
+-- License:      MIT local Color, c, Group, g, s = require("colorbuddy").setup()
 local b = s.bold
 local i = s.italic
 local n = s.inverse
@@ -198,6 +197,22 @@ Group.new('DiffRemoved', c.hue_5, c.visual_grey, no)
 ---------------------------
 -- Filetype Highlighting --
 ---------------------------
+-- Markdown 
+Group.new('markdownUrl',              c.mono_3,  c.none, no)
+Group.new('markdownBold',             c.hue_6,   c.none, b)
+Group.new('markdownItalic',           c.hue_6,   c.none, b)
+Group.new('markdownCode',             c.hue_4,   c.none, no)
+Group.new('markdownCodeBlock',        c.hue_5,   c.none, no)
+Group.new('markdownCodeDelimiter',    c.hue_4,   c.none, no)
+Group.new('markdownHeadingDelimiter', c.hue_5_2, c.none, no)
+Group.new('markdownH1',               c.hue_5,   c.none, no)
+Group.new('markdownH2',               c.hue_5,   c.none, no)
+Group.new('markdownH3',               c.hue_5,   c.none, no)
+Group.new('markdownH3',               c.hue_5,   c.none, no)
+Group.new('markdownH4',               c.hue_5,   c.none, no)
+Group.new('markdownH5',               c.hue_5,   c.none, no)
+Group.new('markdownH6',               c.hue_5,   c.none, no)
+Group.new('markdownListMarker',       c.hue_5,   c.none, no)
 
 -- Git and git related plugins
 Group.new('gitcommitComment',        c.mono_3,                 c.none,              no)
