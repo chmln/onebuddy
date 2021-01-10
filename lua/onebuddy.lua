@@ -66,28 +66,30 @@ Color.new('pink', "#d291e4")
 -- Vim Terminal Colors --
 -------------------------
 
-v.g.terminal_color_0  = "#353a44"
-v.g.terminal_color_8  = "#353a44"
-v.g.terminal_color_1  = "#e88388"
-v.g.terminal_color_9  = "#e88388"
-v.g.terminal_color_2  = "#a7cc8c"
-v.g.terminal_color_10 = "#a7cc8c"
-v.g.terminal_color_3  = "#ebca8d"
-v.g.terminal_color_11 = "#ebca8d"
-v.g.terminal_color_4  = "#72bef2"
-v.g.terminal_color_12 = "#72bef2"
-v.g.terminal_color_5  = "#d291e4"
-v.g.terminal_color_13 = "#d291e4"
-v.g.terminal_color_6  = "#65c2cd"
-v.g.terminal_color_14 = "#65c2cd"
-v.g.terminal_color_7  = "#e3e5e9"
-v.g.terminal_color_15 = "#e3e5e9"
+v.g.terminal_color_0 = "#282c34"
+v.g.terminal_color_1 = "#e06c75"
+v.g.terminal_color_2 = "#98c379"
+v.g.terminal_color_3 = "#e5c07b"
+v.g.terminal_color_4 = "#61afef"
+v.g.terminal_color_5 = "#c678dd"
+v.g.terminal_color_6 = "#56b6c2"
+v.g.terminal_color_7 = "#abb2bf"
+
+v.g.terminal_color_8 = "#545862"
+v.g.terminal_color_9 = "#e06c75"
+v.g.terminal_color_10 = "#98c379"
+v.g.terminal_color_11 = "#e5c07b"
+v.g.terminal_color_12 = "#61afef"
+v.g.terminal_color_13 = "#c678dd"
+v.g.terminal_color_14 = "#56b6c2"
+v.g.terminal_color_15 = "#abb2bf"
+
 
 ----------------------
 -- Vim Editor Color --
 ----------------------
 
-Group.new('Normal',       c.mono_1,       c.syntax_bg,      no)
+Group.new('Normal',       c.mono_1,       c.none,      no)
 Group.new('bold',         c.none,         c.none,      b)
 Group.new('ColorColumn',  c.none,         c.syntax_cursor,  no)
 Group.new('Conceal',      c.mono_4,       c.syntax_bg,      no)
@@ -470,7 +472,7 @@ Group.new('pythonModule',          c.hue_3,  c.none, no)
 Group.new('pythonStringDelimiter', c.hue_4,  c.none, no)
 Group.new('pythonSymbol',          c.hue_1,  c.none, no)
 
--- Ruby 
+-- Ruby
 Group.new('rubyBlock',                     c.hue_3,   c.none, no)
 Group.new('rubyBlockParameter',            c.hue_5,   c.none, no)
 Group.new('rubyBlockParameterList',        c.hue_5,   c.none, no)
